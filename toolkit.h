@@ -7,7 +7,7 @@ class fibonacciGenerator {
 
     int n1;     // One term back
     int n2;     // Two terms back
-    int r;      // current term
+    int c;      // current term
     bool first; // First value has been generated
     bool second;// Second value has been generated
 
@@ -16,7 +16,21 @@ public:
     int next();
 };
 
+class primeGenerator {
+
+    int c; // current term
+    bool prime;
+    bool first;
+    std::vector<int> primes;
+
+public:
+    primeGenerator();
+    int next();
+};
+
+int prime(int);
+
 template <typename T>
-std::vector<int> getPrimeFactors(T n);
+std::vector<int> getPrimeFactors(T);
 
 void getPrimeFactors_templateInstantiationFunction();
