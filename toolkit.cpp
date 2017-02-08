@@ -73,3 +73,11 @@ std::vector<int> getPrimeFactors(T n){
 void getPrimeFactors_templateInstantiationFunction() {
     getPrimeFactors((long long)0);
 }
+
+unsigned long long int factorial (unsigned int n) {
+    unsigned long long int r = 1;
+    for (int i = 1; i <= n; ++i) {
+        r *= i;
+    }
+    return r;
+}

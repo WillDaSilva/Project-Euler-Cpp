@@ -35,3 +35,5 @@ template <typename T>
 std::vector<int> getPrimeFactors(T);
 
 void getPrimeFactors_templateInstantiationFunction();
+
+unsigned long long int factorial (unsigned int n);
