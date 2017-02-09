@@ -4,6 +4,9 @@
 #include <iostream>
 #include <algorithm>
 #include <unordered_map>
+#include <fstream>
+#include <string>
+#include <sstream>
 
 class fibonacciGenerator {
 
