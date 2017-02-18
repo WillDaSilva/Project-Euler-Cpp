@@ -1,4 +1,4 @@
-#include "toolkit.h"
+#include <iostream>
 
 double choose(double n, double k) {
 	double p = 1;

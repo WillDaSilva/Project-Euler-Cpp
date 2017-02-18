@@ -1,6 +1,7 @@
-#include "toolkit.h"
+#include <iostream>
+#include <cmath>
 
-int d(int n) {
+int sumDivisors(int n) {
     int sum = 1;
     for (int i = 2; i < std::floor(std::sqrt(n)) + 1; i++) {
         if (n % i == 0) {
@@ -15,7 +16,7 @@ int main() {
     int sum = 0;
 
     for (int i = 1; i < 10000; i++) {
-        if (i == d(d(i)) && i != d(i)) {
+        if (i == sumDivisors(sumDivisors(i)) && i != sumDivisors(i)) {
             sum += i;
         }
     }

@@ -1,4 +1,5 @@
-#include "toolkit.h"
+#include <iostream>
+#include <cmath>
 
 int main() {
 
@@ -11,6 +12,6 @@ int main() {
     }
 
     std::cout << (unsigned long long)std::floor(std::pow(squareOfSums, 2)) - sumOfSquares << std::endl;
-    
+
     return 0;
 }
