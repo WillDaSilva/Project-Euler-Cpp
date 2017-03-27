@@ -6,7 +6,7 @@
 
 int main() {
 
-    std::ifstream input("18.txt");
+    std::ifstream input("0018.txt");
     std::vector<std::vector<int>> triangle;
 
     for (std::string line; std::getline(input, line);) {

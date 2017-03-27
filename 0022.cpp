@@ -27,10 +27,10 @@ unsigned long int nameValue(const std::string &s) {
 
 int main() {
 
-    std::ifstream input("22.txt");
+    std::ifstream input("0022.txt");
     std::vector<std::string> names;
     std::string namesString;
-    getline(input, namesString);
+    std::getline(input, namesString);
     input.close();
 
     names = split(namesString, ',');
