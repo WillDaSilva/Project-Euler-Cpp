@@ -8,7 +8,7 @@ std::vector<int> primeSieve(int n) {
         return result;
     }
     std::vector<bool> input(n + 1, true);
-    const int limit = (int) (std::floor(sqrt(n)) + 1);
+    const int limit = (int) (std::floor(std::sqrt(n)) + 1);
     for (int i = 2; i <= limit; i++) {
         if (!input[i]) {
             continue;
