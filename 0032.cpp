@@ -19,7 +19,7 @@ bool isPandigital_9(int n) {
         results |= 1 << (digit - 1);
         n /= 10;
     }
-    return results == 0x1ff;
+    return results == 511;
 }
 
 bool checkValue(int a, int b) {
