@@ -6,7 +6,7 @@ unsigned long pentagonal(int n) {
 }
 
 bool isPentagonal(unsigned long n) {
-    return (std::sqrt(24 * n + 1) + 1) == (unsigned long)(std::sqrt(24 * n + 1) + 1) && (unsigned long)(std::sqrt(24 * n + 1) + 1) % 6 == 0;
+    return (std::sqrt(24 * n + 1) + 1) / 6 == (unsigned long)((std::sqrt(24 * n + 1) + 1) / 6);
 }
 
 int main() {
