@@ -43,7 +43,9 @@ public:
 int prime(int n) {
 
     primeGenerator pGen;
-    for (int i = 0; i < n-1; i++) {pGen.next();}
+    for (int i = 0; i < n-1; ++i) {
+        pGen.next();
+    }
     return pGen.next();
 }
 

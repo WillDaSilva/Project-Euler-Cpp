@@ -5,10 +5,10 @@
 int main() {
 
     std::set<InfInt> results;
-    for (int a = 2; a <= 100; a++) {
-        for (int b = 2; b <= 100; b++) {
+    for (int a = 2; a <= 100; ++a) {
+        for (int b = 2; b <= 100; ++b) {
             InfInt c = 1;
-            for (int i = 0; i < b; i++) {
+            for (int i = 0; i < b; ++i) {
                 c *= a;
             }
             results.insert(c);

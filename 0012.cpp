@@ -12,7 +12,7 @@ int main() {
         incrementer += 1;
         triangularNumber += incrementer;
 
-        for (int i = 1; i*i <= triangularNumber; i++) {
+        for (int i = 1; i*i <= triangularNumber; ++i) {
             if (triangularNumber % i == 0) {
                 numDivisors += 2;
             }

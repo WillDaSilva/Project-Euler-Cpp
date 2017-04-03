@@ -24,7 +24,7 @@ public:
         }
         while (true) {
             prime = true;
-            for (int i = 0; i < primes.size() && primes[i] <= std::floor(std::sqrt(c)) + 1; i++) {
+            for (int i = 0; i < primes.size() && primes[i] <= std::floor(std::sqrt(c)) + 1; ++i) {
                 if (c % primes[i] == 0) {
                     prime = false;
                     break;

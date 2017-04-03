@@ -5,8 +5,8 @@ int main () {
 
     int largest = 0;
     int q;
-    for (int i = 100; i < 999; i++) {
-        for (int j = 100; j < 999; j++) {
+    for (int i = 100; i < 999; ++i) {
+        for (int j = 100; j < 999; ++j) {
             q = (i*j);
             int n = 0;                                      // length of q
             while (q != (q % (int)(std::pow(10,++n)))){}    // calculate n

@@ -24,9 +24,9 @@ int main() {
     // ------- = -
     // 10a + b   b
 
-    for (int a = 1; a < 10; a++) {
-        for (int b = 1; b < a; b++) {
-            for (int c = 1; c < b; c++) {
+    for (int a = 1; a < 10; ++a) {
+        for (int b = 1; b < a; ++b) {
+            for (int c = 1; c < b; ++c) {
                 if ((c * 10 + a) * b == c * (a * 10 + b)) {
                     n *= (c * 10 + a);
                     d *= (a * 10 + b);

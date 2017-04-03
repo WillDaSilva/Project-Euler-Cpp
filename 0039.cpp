@@ -5,7 +5,7 @@ int main() {
 
     int optimalP = 0;
     int largestNumSolutions = 0;
-    for (int p = 3; p <= 1000; p++) {
+    for (int p = 3; p <= 1000; ++p) {
         int numSolutions = 0;
         int a = 1;
         while (a < p / 4) {

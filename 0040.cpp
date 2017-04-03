@@ -5,12 +5,12 @@
 int main() {
 
     std::string n;
-    for (int i = 0; i < 1000000; i++) {
+    for (int i = 0; i < 1000000; ++i) {
         n.append(std::to_string(i));
     }
 
     int product = 1;
-    for (int i = 0; i < 7; i++) {
+    for (int i = 0; i < 7; ++i) {
         product *= n[std::pow(10, i)] - 48;
     }
 

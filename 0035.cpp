@@ -20,7 +20,7 @@ std::vector<int> primeSieve(int n) {
     }
     std::vector<bool> input(n + 1, true);
     const int limit = (int) (std::floor(std::sqrt(n)) + 1);
-    for (int i = 2; i <= limit; i++) {
+    for (int i = 2; i <= limit; ++i) {
         if (!input[i]) {
             continue;
         }
@@ -56,7 +56,7 @@ int main() {
         if (isMadeOf1379(p)) {
             bool isCircularPrime = true;
             int numDigits = getNumDigits(p);
-            for (int i = 0; i < numDigits - 1; i++) {
+            for (int i = 0; i < numDigits - 1; ++i) {
                 p = (p / 10) + ((p % 10) * std::pow(10, numDigits - 1));
                 if (!std::binary_search(primes.begin(), primes.end(), p)) {
                     isCircularPrime = false;
@@ -64,7 +64,7 @@ int main() {
                 }
             }
             if (isCircularPrime) {
-                for (int i = 0; i < numDigits; i++) {
+                for (int i = 0; i < numDigits; ++i) {
                     p = p / 10 + (p % 10) * std::pow(10, numDigits - 1);
                     circularPrimes.insert(p);
                 }

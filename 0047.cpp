@@ -4,7 +4,7 @@
 std::unordered_set<int> getDistinctPrimeFactors(int n) {
     std::unordered_set<int> distinctPrimeFactors;
     while (n > 1) {
-        for (int i = 2; i <= n; i++) {
+        for (int i = 2; i <= n; ++i) {
             if (n % i == 0) {
                 distinctPrimeFactors.insert(i);
                 n /= i;

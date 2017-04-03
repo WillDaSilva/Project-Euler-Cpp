@@ -24,7 +24,7 @@ long long concatenateNumbers(long long a, long long b) {
 int main() {
 
     long long max = 0;
-    for (int i = 1; i < 10000; i++) {
+    for (int i = 1; i < 10000; ++i) {
         long long concatenatedProduct = i;
         int n = 2;
         while (concatenatedProduct < 100000000) {

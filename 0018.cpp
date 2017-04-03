@@ -19,7 +19,7 @@ int main() {
         triangle.push_back(values);
     }
 
-    for (int y = triangle.size() - 1; y >= 0; y--) {
+    for (int y = triangle.size() - 1; y >= 0; --y) {
         for (int x = 0; x < triangle[y].size() - 1; x++) {
             triangle[y-1][x] += triangle[y][x] < triangle[y][x + 1] ? triangle[y][x + 1] : triangle[y][x];
         }

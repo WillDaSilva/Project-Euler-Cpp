@@ -32,8 +32,8 @@ int main() {
     std::unordered_set<long long> pandigitals;
 
     // NN * NNN = NNNN
-    for (int a = 10; a < 100; a++) {
-        for (int b = 100; b < 1000; b++) {
+    for (int a = 10; a < 100; ++a) {
+        for (int b = 100; b < 1000; ++b) {
             if (checkValue(a, b)) {
                 pandigitals.insert(a * b);
             }
@@ -41,8 +41,8 @@ int main() {
     }
 
     // N * NNNN = NNNN
-    for (int a = 1; a < 10; a++) {
-        for (int b = 1000; b < 10000; b++) {
+    for (int a = 1; a < 10; ++a) {
+        for (int b = 1000; b < 10000; ++b) {
             if (checkValue(a, b)) {
                 pandigitals.insert(a * b);
             }

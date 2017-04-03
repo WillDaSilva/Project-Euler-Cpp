@@ -4,11 +4,11 @@
 std::vector<int> largePowerOfTwo(int n) {
     std::vector<int> r;
     r.push_back(1);
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; ++i) {
         for (auto &e : r) {
             e *= 2;
         }
-        for (int j = 0; j < r.size(); j++) {
+        for (int j = 0; j < r.size(); ++j) {
             if (r[j] >= 10) {
                 if (j+1 != r.size()) {
                     r[j+1] += (r[j] - (r[j] % 10)) / 10;

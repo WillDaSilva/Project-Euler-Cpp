@@ -7,7 +7,7 @@ int main() {
 
     int longestChain = 0;
     int longestChainStartingNum = 0;
-    for (int i = 999999; i > 1; i--) {
+    for (int i = 999999; i > 1; --i) {
         long long n = i;
         int chain = 0;
         while (true) {

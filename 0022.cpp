@@ -37,7 +37,7 @@ int main() {
     std::sort(names.begin(), names.end());
 
     unsigned long long int sum = 0;
-    for (int i = 0; i < names.size(); i++) {
+    for (int i = 0; i < names.size(); ++i) {
         sum += nameValue(names[i]) * (i + 1);
     }
 

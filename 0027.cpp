@@ -24,8 +24,8 @@ int main() {
     int productAB;
     int largestN = 0;
 
-    for (int a = -999; a < 1000; a++) {
-        for (int b = -1000; b <= 1000; b++) {
+    for (int a = -999; a < 1000; ++a) {
+        for (int b = -1000; b <= 1000; ++b) {
             int n = 0;
             bool consecutive = true;
             while (consecutive) {

@@ -2,7 +2,7 @@
 
 double choose(double n, double k) {
 	double p = 1;
-	for (int i = 1; i <= k; i++) {
+	for (int i = 1; i <= k; ++i) {
         p *= (n + 1 - i) / i;
     }
 	return p;

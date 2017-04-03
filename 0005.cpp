@@ -5,9 +5,9 @@ int main() {
     int n = 0;
     bool found;
     while (true) {
-        n++;
+        ++n;
         found = true;
-        for (int i = 1; i < 21; i++) {
+        for (int i = 1; i < 21; ++i) {
             if (n % i != 0) {
                 found = false;
             }
