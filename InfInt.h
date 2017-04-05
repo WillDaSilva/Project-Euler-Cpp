@@ -17,6 +17,7 @@
  *      numberOfDigits: returns number of digits
  *      size:           returns size in bytes
  *      toString:       converts it to a string
+ *      pow:            raise to a positive exponent
  *
  *   There are also conversion methods which allow conversion to primitive types:
  *   toInt, toLong, toLongLong, toUnsignedInt, toUnsignedLong, toUnsignedLongLong.
@@ -172,6 +173,9 @@ public:
 
     /* integer square root */
     InfInt intSqrt() const; // throw
+
+    /* raise to a positive exponent */
+    InfInt pow(InfInt);
 
     /* digit operations */
     char digitAt(size_t i) const; // throw
@@ -972,6 +976,15 @@ inline InfInt InfInt::intSqrt() const
         }
     } while (lo < hi - 1 && mid2 != *this);
     return lo;
+}
+
+inline InfInt InfInt::pow(InfInt n)
+{
+    InfInt q = *this;
+    for (InfInt i = 0; i < n - 1; ++i) {
+        *this *= q;
+    }
+    return *this;
 }
 
 inline char InfInt::digitAt(size_t i) const
