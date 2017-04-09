@@ -41,14 +41,14 @@
 #include <sstream>
 #include <iomanip>
 
-//#include <limits.h>
-//#include <stdlib.h>
+#include <limits.h>
+#include <stdlib.h>
 
-//#ifdef _WIN32
-//#define LONG_LONG_MIN LLONG_MIN
-//#define LONG_LONG_MAX LLONG_MAX
-//#define ULONG_LONG_MAX ULLONG_MAX
-//#endif
+#ifdef _WIN32
+#define LONG_LONG_MIN LLONG_MIN
+#define LONG_LONG_MAX LLONG_MAX
+#define ULONG_LONG_MAX ULLONG_MAX
+#endif
 
 #ifdef INFINT_USE_EXCEPTIONS
 #include <exception>
